@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello world !</h1>
+    <h1>Liste des bières :)</h1>
     <div>
       <ul>
         <li v-for="(beer,key) in data">
@@ -13,10 +13,11 @@
 
 <script>
   import axios from "axios";
+  import { getBeers } from "~/assets/js/beer";
 
   export default {
     asyncData(context) {
-      return axios.get(context.env.API_BEER_BASE_URL+`beers?key=`+context.env.API_BEER_KEY)
+      return getBeers()
         .then((res) => {
           return {data: res.data.data}
         });
