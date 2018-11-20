@@ -16,10 +16,10 @@
 
   export default {
     asyncData(context) {
-      return axios.get(`https://sandbox-api.brewerydb.com/v2/beers?key=d54e938eaaa5fde135e5a1e4405a6ea6`)
+      return axios.get(context.env.API_BEER_BASE_URL+`beers?key=`+context.env.API_BEER_KEY)
         .then((res) => {
           return {data: res.data.data}
-        })
+        });
     }
   }
 

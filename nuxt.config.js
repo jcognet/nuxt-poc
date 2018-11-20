@@ -2,6 +2,7 @@ module.exports = {
     env: {},
   modules: [
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ]
 }
