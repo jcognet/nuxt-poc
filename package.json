@@ -1,7 +1,13 @@
 {
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  },
   "name": "mon-application",
   "scripts": {
-    "dev": "HOST=0.0.0.0 PORT=3333 nuxt"
+    "dev": "nuxt"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
