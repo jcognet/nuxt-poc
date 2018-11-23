@@ -3,7 +3,7 @@
     <h1>Liste des bières :)</h1>
     <div>
       <ul>
-        <li v-for="(beer, key) in data" v-bind="key">{{ beer.nameDisplay }}</li>
+        <li v-for="(beer, key) in data" :key="key">{{ beer.nameDisplay }}</li>
       </ul>
     </div>
   </div>
